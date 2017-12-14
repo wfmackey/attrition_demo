@@ -209,7 +209,9 @@ numbers=noenddot,
 }
 
 % Issue #27
-\AtBeginEnvironment{mdframed}{\renewcommand{\thempfootnote}{\alph{mpfootnote}}}
+\AtBeginEnvironment{mdframed}{\renewcommand{\thempfootnote}{\alph{mpfootnote}}%
+                              % Ensure non-unmabiguous Ibid.s
+                              \citereset}
 
 % The verysmallbox is intended to be a fraction of one column.
 \newenvironment{verysmallbox}[3][htb]{%
