@@ -1,0 +1,68 @@
+\documentclass{grattan}
+%\documentclass[embargoed,FrontPage]{grattan}
+%\documentclass[FrontPage]{grattan}
+%\input{tex/preamble}
+
+% All chapters are in the /tex/ folder
+% Bibliography  
+\addbibresource{bibliography.bib}
+\addbibresource{mendeley.bib}
+
+% add_to_dictionary: DBCFT
+% add_to_dictionary: GFCF
+% add_to_dictionary: GSP
+% add_to_dictionary: GVA
+% add_to_dictionary: FDI 
+% add_to_dictionary: overtightening
+% add_to_dictionary: uptick IPPs IPP
+
+% following used in an equation for better alignment
+% add_to_dictionary: sc enario
+
+
+
+% Appears on the front page
+\title{Stagnation nation? Australian investment in a low-growth world}
+
+\author{Jim Minifie}
+\GrattanReportNumber{2017-02}
+
+% Embargo date
+%\EmbargoDate{Sunday 26th February 2017}
+%\EmbargoText{DRAFT FOR REVIEW -- NOT FOR DISTRIBUTION}
+%\EmbargoTitleText{PLEASE DO NOT DISTRIBUTE}
+
+\acknowledgements{\input{tex/acknowledgements}}
+
+\begin{document}
+
+\input{tex/overview}
+
+\input{tex/recommendations}
+
+\contentspage
+
+\listoffigures
+
+\input{tex/chap1}
+
+\input{tex/chap2}
+
+\input{tex/chap3}
+
+\input{tex/chap4}
+
+\input{tex/chap5}
+
+\input{tex/chap6}
+
+\appendix
+
+\input{tex/appendices}
+
+\input{tex/appendicesC4}
+\clearpage
+\renewcommand*{\modellingpars}{\null}
+\printbibliography[title=References]
+
+\end{document}
